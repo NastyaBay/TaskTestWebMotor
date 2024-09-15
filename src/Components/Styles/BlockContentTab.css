@@ -1,0 +1,82 @@
+/*стиль для блока контента*/
+.blockContentTab {
+    box-sizing: border-box;
+    width: 44.75rem;
+    height: 28.75rem;
+    background-color: #F2F0F0;
+    padding: 1.25rem;
+    position: relative;
+}
+
+.btnBlockContent {
+    box-sizing: border-box;
+    background-color: #0078EE;
+    width: 42.125rem;
+    height: 3.125rem;
+    border: 0;
+    border-radius: 5px;
+    color: #FFFFFF;
+    font-size: 1.125rem;
+    position: absolute;
+    bottom: 0.8125rem;
+}
+
+.btnBlockContent:hover {
+    background-color: #074a8d;
+}
+
+.h1-contentTab {
+    color: #2B3343;
+    margin: 0;
+    font-size: 2rem;
+}
+
+.scrollBar {
+    max-height: 85%;
+    overflow-y: auto;
+}
+.scrollBar::-webkit-scrollbar {
+    width: 4px;
+}
+
+.scrollBar::-webkit-scrollbar-thumb {
+    background-color: #0078EE; 
+    border-radius: 46px; 
+    max-height: 40px;
+    
+}
+
+.scrollBar::-webkit-scrollbar-track {
+    background: rgba(173, 182, 191, 0.4); 
+    border-radius: 5px;
+}
+
+.scrollBar::-webkit-scrollbar-button {
+    display: none; 
+}
+
+.textScrollBarBlock {
+    font-size: 1.125rem;
+}
+
+
+@media (min-width:376px) and (max-width: 760px) {
+    .blockContentTab{
+        width:28rem;
+        height: 32.6rem;
+        padding: 1.6rem;
+    }
+    .btnBlockContent{
+        width: 28rem;
+        height: 3.5rem;
+        left: 0;
+        bottom: 1rem;
+    }
+    .textScrollBarBlock > *, li{
+        font-size: 14px ; 
+    }
+    .h1-contentTab{
+        font-size: 22px;
+    }
+
+}

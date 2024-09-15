@@ -1,0 +1,20 @@
+.bodyHome{
+    display: flex;
+    padding: 3.75rem;
+    flex-wrap: wrap
+}
+.leftBlock{
+margin-right: 2.8125rem;
+}
+
+@media (min-width:376px) and (max-width: 760px) {
+    .bodyHome{
+      padding: 0;
+      flex-direction: column;
+      margin: 12.5rem 0;
+    }
+    .leftBlock{
+        margin: 0;
+        margin-bottom: 2.58rem;
+    }
+}

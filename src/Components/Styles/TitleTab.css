@@ -1,0 +1,78 @@
+
+/*Стиль шрифтов у блока таба с заголовоком*/
+.titleBlockTab{
+    font-size: 1.5rem;
+    margin: 0;
+    margin-bottom: 1.5rem;
+}
+.textBlockTab{
+    font-size: 1rem;
+    margin: 0;
+}
+
+/*блок таб*/
+.btnTitleTab{
+    box-sizing: border-box;
+    width: 44.875rem;
+    height: 8.75rem;
+    padding: 1.25rem;
+    padding-right: 7.6rem;
+    /*чтобы контент внутри блока был равномерно распределен*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 1.25rem;
+    border: 0;
+    text-align: start;
+}
+
+.activeTab{
+    background-color: #0078EE;
+    color: #FFFFFF;
+}
+.noActiveTab{
+    
+    background-color: #F2F0F0;
+    color: #2B3343;
+}
+.btnBlockTab{
+    display: none;
+}
+
+@media (min-width:376px) and (max-width: 760px) {
+    .btnTitleTab{
+        width:28rem;
+        height: 11.6rem;
+        padding: 1.6rem;
+        margin-bottom: 0.76rem;
+        position: relative;
+    }
+    .titleBlockTab{
+        font-size: 20px;
+    }
+    .btnBlockTab{
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 19px;
+        height: 2.25rem;
+        width: 2.25rem;
+        border: 0;
+        border-radius: 5px;
+        padding: 0;
+    }
+
+    .activeTab .btnBlockTab img{
+        content: url(/public/Tabler.svg);
+    }
+    .noActiveTab .btnBlockTab img{
+        content: url(/public/TablerWhite.svg);
+    }
+
+    .activeTab .btnBlockTab{
+        background-color: #FFFFFF;
+    }
+    .noActiveTab .btnBlockTab {
+        background-color: #0078EE;
+    }
+}
